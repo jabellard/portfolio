@@ -16,8 +16,8 @@
 
 <body>
     <script>
-    var host = "jabellard.com";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
+      var host = "jabellard.com";
+      if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
     </script>
 
